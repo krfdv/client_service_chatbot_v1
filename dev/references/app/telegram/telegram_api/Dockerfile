@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt 
 
-ENV TELEGRAM_BOT_TOKEN="6886579173:AAEp_KAV2cLTHBQ-X__3hyUKxLMztmjYFaY"
+ENV TELEGRAM_BOT_TOKEN=""
 EXPOSE 3310
 
 CMD ["uvicorn", "telegram_api:app", "--host", "0.0.0.0", "--port", "3310"]
