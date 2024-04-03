@@ -1,0 +1,3 @@
+aiogram
+httpx
+asyncio

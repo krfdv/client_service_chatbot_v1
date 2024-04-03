@@ -1,0 +1,24 @@
+services:
+  graph:
+    build:
+      context: ./graph
+    domainname: graph
+    networks:
+      - telegram-bot-network
+  telegram_api:
+    build:
+      context: ./telegram/telegram_api
+    domainname: telegram_api
+    networks:
+      - telegram-bot-network
+  telegram_polling:
+    build: 
+      context: ./telegram/telegram_polling
+    domainname: telegram_polling
+    networks:
+      - telegram-bot-network
+
+networks:
+  telegram-bot-network:
+
+  
